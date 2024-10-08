@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>RTOC drillingteam & rights added</title>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <div class="tabs-wrapper">
+      <div class="tab" id="drillingteam_tab">Добавить ББ</div>
+      <div class="tab tab-disactive" id="rights_tab">Добавить права</div>
+    </div>
+    <div id="add_drillingteam">
+      <h2>Добавление буровой бригады:</h2>
+      <div class="datafields-wrapper">
+        <div class="input-field">
+          <label for="well_id_input">WELL ID скважины: </label>
+          <input id="well_id_input" type="number" />
+        </div>
+        <div class="input-field">
+          <label for="drillingteam_input">№ буровой бригады: </label>
+          <input id="drillingteam_input" type="number" />
+        </div>
+      </div>
+      <div class="btn">
+        <button id="accept_drillingteam_button">Проверить</button>
+      </div>
+      <div>
+        <div class="show-data-for-accepted">
+          <div class="accepted-title">Проверить данные:</div>
+          <div class="accepted-field-for-show">
+            WELL_ID:&nbsp;
+            <span id="well_id_show_drillingteam"></span>
+          </div>
+          <div class="accepted-field-for-show">
+            ББ:&nbsp;
+            <span id="drillingteam_n_show_drillingteam"></span>
+          </div>
+        </div>
+        <div class="succes-btns">
+          <div class="btn">
+            <button disabled id="succes_drillingteam_data">Подтвердить</button>
+          </div>
+          <div class="btn">
+            <button disabled id="drillingteam_send">Отправить</button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="warning-info" id="drillingteam_accept_warning"></div>
+      </div>
+    </div>
+    <div class="visually-hidden" id="add_rights">
+      <h2>Добавление прав</h2>
+      <div class="datafields-wrapper">
+        <div class="input-field">
+          <label for="well_id_rights">WELL ID скважины: </label>
+          <input id="well_id_rights" type="number" />
+        </div>
+        <div class="input-field">
+          <label for="user_login_rights">Логин: </label>
+          <input id="user_login_rights" type="text" />
+        </div>
+      </div>
+      <div class="btn">
+        <button id="accept_rights_button">Проверить</button>
+      </div>
+      <div class="show-data-for-accepted">
+        <div class="accepted-title">Проверить данные:</div>
+        <div class="accepted-field-for-show">
+          WELL_ID:&nbsp;
+          <span id="well_id_show_rights"></span>
+        </div>
+        <div class="accepted-field-for-show">
+          Логин:&nbsp;
+          <span id="login_show_rights"></span>
+        </div>
+      </div>
+      <div class="succes-btns">
+        <div class="btn">
+          <button disabled id="succes_rights_data">Подтвердить</button>
+        </div>
+        <div class="btn">
+          <button disabled id="rights_send">Отправить</button>
+        </div>
+      </div>
+      <div>
+        <div class="warning-info" id="rights_accept_warning"></div>
+      </div>
+    </div>
+    <div class="company-img">
+      <img width="250" src="./assets/image001.png" alt="" />
+    </div>
+    <div class="application-rights">
+      <div>ООО "Ригинтел"</div>
+      <div>
+        <div>Разработчик приложения: Томилин Василий</div>
+        <div>Разработчик сервера: Демидов Игорь</div>
+      </div>
+      <div>Все права защищены ©</div>
+      <div>Пермь 2024</div>
+    </div>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

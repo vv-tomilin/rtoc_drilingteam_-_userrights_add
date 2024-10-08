@@ -1,0 +1,177 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif;
+  margin: auto;
+  max-width: 38rem;
+  height: 60vw;
+  padding: 2rem;
+
+  position: relative;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.tabs-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.tab {
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+  width: 100%;
+  text-align: center;
+
+  cursor: pointer;
+}
+
+.tab-disactive {
+  background-color: rgb(179, 179, 179);
+}
+
+.datafields-wrapper {
+  width: 350px;
+  margin-bottom: 10px;
+}
+
+.input-field {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 8px;
+
+  color: rgb(2, 0, 148);
+}
+
+.input-field > label {
+  font-weight: 700;
+}
+
+.btn {
+  margin-bottom: 5px;
+}
+
+.btn > button {
+  background-color: bisque;
+
+  border-radius: 8px;
+  border-width: 1px;
+
+  padding: 5px 8px;
+}
+
+.btn > button:hover {
+  cursor: pointer;
+}
+
+.btn > button:active {
+  background-color: rgb(209, 205, 186);
+}
+
+.succes-btns {
+  display: flex;
+
+  max-width: max-content;
+
+  margin-top: 10px;
+}
+
+.succes-btns > .btn {
+  margin-right: 8px;
+}
+
+.show-data-for-accepted {
+  background-color: rgb(177, 217, 240);
+
+  width: 200px;
+
+  border-radius: 10px;
+
+  padding: 5px 8px;
+}
+
+.accepted-title {
+  text-decoration: underline;
+
+  font-weight: 700;
+  font-size: 15px;
+
+  margin-bottom: 7px;
+}
+
+.accepted-field-for-show {
+  font-size: 12px;
+  font-weight: 700;
+
+  color: rgb(44, 90, 0);
+}
+
+.accepted-field-for-show > span {
+  color: red;
+}
+
+.warning-info {
+  background-color: rgb(197, 197, 197);
+
+  width: max-content;
+
+  margin-top: 20px;
+
+  border-radius: 8px;
+}
+
+.warn-msg {
+  display: block;
+
+  padding: 9px 9px;
+
+  color: red;
+
+  font-weight: 700;
+}
+
+.info-msg {
+  display: block;
+
+  padding: 9px 9px;
+
+  color: rgb(54, 25, 219);
+
+  font-weight: 700;
+}
+
+.application-rights {
+  position: absolute;
+  bottom: 80px;
+  right: 20px;
+
+  font-size: 12px;
+}
+
+.company-img {
+  position: absolute;
+  bottom: 180px;
+  right: 30px;
+}
