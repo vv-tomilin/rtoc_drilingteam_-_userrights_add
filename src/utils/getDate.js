@@ -5,7 +5,7 @@ export default function dateCreate() {
     const mounth = (date.getMonth() + 1).toString().length === 1 ? "0" + (date.getMonth() + 1) : date.getMonth() + 1;
     const year = date.getFullYear().toString().substring(2);
 
-    console.log("CREATE_DATE_FOR_GET_TOKEN >> ", day + mounth + year);
+    console.log("CREATE_DATE_FOR_GET_TOKEN >> ", day.toString() + mounth.toString() + year.toString());
 
-    return day + mounth + year;
+    return day.toString() + mounth.toString() + year.toString();
 }
